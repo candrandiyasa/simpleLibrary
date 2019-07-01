@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+:root {
+    --var-iden-color: #ff487e;
+    --color-black: #212121;
+    --shadow-color: rgba(255, 72, 126, 0.5);
+    --radius-recomend-item: 20px;
+    --radius-search: 50px;
+}
+
+* , *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-black);
+    background-color: #EDEDED;
+}
+
+a {
+    text-decoration: none;
+    color: var(--var-iden-color);
+}
+
+#master-container {
+    width: 850px;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px auto 0 auto;
+    padding: 10px;
+    border: 1px dashed var(--var-iden-color);
+    border-left: 8px solid var(--var-iden-color);
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    display: flex;
+}
+
+.container a {
+    padding: 10px 20px;
+    width: 25%;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #85847f;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+}
+
+.container small {
+    margin-right: 30px;
+}
+.container .button-log {
+    background-color: var(--var-iden-color);
+    border: none;
+    color: #EDEDED;
+}
+.content-admin {
+    width: 50%;
+    height: 80px;
+}
+.content-admin h3 {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.content-admin h1 {
+    color: var(--var-iden-color);
+}
+
+.content-admin form {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+.content-admin input[type=search] {
+    width: 80%;
+    padding: 15px 20px;
+    border: none;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+
+    transition: background .55s ease;
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.content-admin input[type=search]::-webkit-input-placeholder{
+    color: #dcdada;
+}
+
+.content-admin input[type=search]:hover, .content-admin input[type=search]:focus{
+    outline:none;
+}
+
+.center {
+    align-items: center;
+}
+
+.right {
+    justify-content: flex-end;
+}

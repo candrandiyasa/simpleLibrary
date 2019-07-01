@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+:root {
+    --var-iden-color: #ff487e;
+    --color-black: #212121;
+    --shadow-color: rgba(255, 72, 126, 0.5);
+    --radius-recomend-item: 20px;
+    --radius-search: 50px;
+}
+* , *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-black);
+    background-color: #EDEDED;
+}
+
+/*
+body { 
+    overflow: hidden; 
+}
+*/
+
+a {
+    text-decoration: none;
+    color: var(--var-iden-color);
+}
+
+#master-container {
+    width: 850px;
+    display: flexbox;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+}
+.container {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.header {
+    text-align: right;
+    padding-right: 10%;
+}
+
+.header a {
+    border: 1px solid var(--var-iden-color);
+    padding: 5px 20px;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+}
+
+.header a:hover{
+    color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.title {
+    padding-left: 10%;
+}
+
+.title h3 {
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.title h1 {
+    color: var(--var-iden-color);
+}
+
+.search {
+    text-align: center;
+}
+
+.search input[type=search]{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+    color: #63717f;
+    width: 80%;
+    height: 50px;
+    padding: 10px 40px;
+    border: none;
+
+    border-radius: var(--radius-search);
+    -webkit-border-radius: var(--radius-search);
+    -moz-border-radius: var(--radius-search);
+    -ms-border-radius: var(--radius-search);
+    -o-border-radius: var(--radius-search);
+
+    transition: background .55s ease;
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.search input[type=search]::-webkit-input-placeholder{
+    color: #dcdada;
+}
+
+.search input[type=search]:hover, .search input[type=search]:focus{
+    outline:none;
+}
+
+.recomend h1{
+    font-size: 10pt;
+    text-align: center;
+    padding: 20px 0px;
+    color: var(--var-iden-color);
+}
+
+.recomend ul{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.recomend li{
+    width: 20%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #fff; 
+    text-align: center;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.recomend img {
+    width: 80%;
+    height: 150px;
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.recomend small{
+    display: block;
+    padding: 15px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.recomend button {
+    border: none;
+    width: 80%;
+    color: #fff;
+    background-color: var(--var-iden-color);
+    padding: 10px 15px;
+    cursor: pointer;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}

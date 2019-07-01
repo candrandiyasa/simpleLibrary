@@ -1,0 +1,191 @@
+:root {
+    --var-iden-color: #ff487e;
+    --color-black: #212121;
+    --shadow-color: rgba(255, 72, 126, 0.5);
+    --radius-recomend-item: 20px;
+    --radius-search: 50px;
+}
+
+* , *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-black);
+    background-color: #EDEDED;
+}
+
+a {
+    text-decoration: none;
+    color: var(--var-iden-color);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 200ms;
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.modal h2 {
+    padding: 20px;
+}
+.modal .content {
+    overflow: auto;
+    max-height: 400px;
+    padding: 20px 40px;
+}
+
+/*
+
+*/
+.modal label {
+    display: block;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.modal input[type=text], .modal input[type=password], .modal input[type=date], .select-modal {
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 13pt;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.modal input[type=text]:hover, .modal input[type=password]:hover, .modal input[type=date]:hover {
+    outline: none;
+    color: var(--color-black);
+}
+
+.modal input[type=text]::-webkit-input-placeholder, .modal input[type=password]::-webkit-input-placeholder {
+    color: #dcdada;
+}
+
+.modal input[type=submit] {
+    display: block;
+    padding: 10px 50px;
+    margin: 10px;
+    font-size: 13pt;
+    background-color: var(--var-iden-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    border-radius: var(--radius-recomend-item);
+    -webkit-border-radius: var(--radius-recomend-item);
+    -moz-border-radius: var(--radius-recomend-item);
+    -ms-border-radius: var(--radius-recomend-item);
+    -o-border-radius: var(--radius-recomend-item);
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal img {
+    height: 200px;
+    display: inline-block;
+
+    -webkit-box-shadow: 0px 3px 10px var(--shadow-color);
+    -moz-box-shadow: 0px 3px 10px var(--shadow-color);
+    box-shadow: 0px 3px 10px var(--shadow-color);
+}
+
+.modal p {
+    vertical-align: top;
+    padding: 20px;
+    overflow: auto;
+    height: 200px;
+}
+
+.center-content {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.content table {
+    font-size: 10pt;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+  
+.content th, .content td {
+    text-align: left;
+    padding: 8px;
+}
+
+.content tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.content .btn-created {
+    padding: 10px 20px;
+    border: 1px solid var(--var-iden-color);
+    margin: 10px;
+}
+
+.content .act-ed {
+    padding: 5px;
+    background-color: #6bb76d;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.content .act-de {
+    padding: 5px;
+    background-color: #eb203e;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.tambah input[type=text] {
+    padding: 5px !important; 
+}
